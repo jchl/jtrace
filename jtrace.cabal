@@ -1,15 +1,17 @@
 Name:                jtrace
 Version:             0.0
-Description:         Implementation of a ray tracer meeting the specification of the 2000 ICFP Programming Contest
-License:             BSD
+Cabal-version:       >= 1.2
+Build-type:          Simple
+Synopsis:            Ray tracer meeting the specification of the 2000 ICFP Programming Contest
+License:             MIT
 License-file:        LICENSE
 Author:              James Lingard
 Maintainer:          james@lingard.com
-Build-Type:          Simple
-Cabal-Version:       >=1.2
+
 Executable jtrace
   Main-is:           Main.hs
-  hs-source-dirs:    .
-  Build-Depends:     base >= 3 && < 5, array, containers, mtl
-  Build-Tools:       alex, happy
-  Other-Modules:     Gml, GmlTokens
+  Other-modules:     Gml, GmlTokens, Machine, Operators, Ppm, Render, RenderOperator,
+                     Transformations, Types, Utils
+  Hs-source-dirs:    src
+  Build-depends:     base >= 3 && < 5, array, containers, mtl
+  Build-tools:       alex, happy
