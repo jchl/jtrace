@@ -1,0 +1,25 @@
+Monadic parser and lexer for reporting of line:column in error messages
+
+Implement proper 'show' function for Instruction type
+Neaten up naming of operators
+
+Make push/pop of arguments from stack neater
+
+Implement better error handling for stack type errors
+
+Implement rendering
+
+Figure out (and fix?) compile warnings from Alex code
+
+Tidy up (?) render/apply/if code
+
+Double check div/mod implementation
+Double check frac implementation
+Double check floor implementation
+Test transformation code (matrix multiplication, etc.)
+Test rendering code
+
+Licence file and top-of-file comments
+
+Sort out cabal stuff; installation, etc.
+
